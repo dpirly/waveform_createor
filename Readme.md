@@ -3,4 +3,5 @@
 
 ## supported standards
 + WLAN
++ 5G NR
 
