@@ -13,8 +13,8 @@ namespace WlanBE
         {
             var api = new Agilent.SignalStudio.N7617.Wlan11beAPI();
             api.SetWlan11beFunction(Agilent.SignalStudio.N7617.Mimo11beFunction.MIMO_MxN_1SG);
-
-            api.WaveformSetup.OversamplingRatio = 2;
+            var OversamplingRatio = 2;
+            api.WaveformSetup.OversamplingRatio = OversamplingRatio;
             api.WaveformSetup.HeadIdleInterval = 1e-6;
             api.WaveformSetup.OfdmaCarrierConfig.EHTLTFType = EHTLTFSymbolIntervalMode.SI_Quadruple;
             api.WaveformSetup.OfdmaCarrierConfig.MaximumPEDuration = MaxPEDurationMode.PE_8;
@@ -44,7 +44,7 @@ namespace WlanBE
                     } while (api.WaveformSetup.Nsym < 5);
                     api.Generate();
 
-                    var filename = String.Format("./WLAN_EHT{0}_MCS{1}_KS.wfm", bw, mcs);
+                    var filename = String.Format("./WLAN_EHT{0}_MCS{1}_SYM{2}_SR{3}X_KS.wfm", bw, mcs, api.WaveformSetup.Nsym, OversamplingRatio);
                     api.ExportWaveform(filename);
                 }
             }
