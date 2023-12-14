@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32630.194
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WlanBE", "WlanBE\WlanBE.csproj", "{BC5C578E-02F3-4A4B-AF4F-FB2C6A1E87CF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BC5C578E-02F3-4A4B-AF4F-FB2C6A1E87CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC5C578E-02F3-4A4B-AF4F-FB2C6A1E87CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC5C578E-02F3-4A4B-AF4F-FB2C6A1E87CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC5C578E-02F3-4A4B-AF4F-FB2C6A1E87CF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1E31263E-6284-40A7-8FA9-358BF91EC05E}
+	EndGlobalSection
+EndGlobal
